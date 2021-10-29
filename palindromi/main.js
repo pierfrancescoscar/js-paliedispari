@@ -7,6 +7,14 @@
 const userWord = prompt('Please, enter a word.');
 const reverseWord = reverseCharacters(userWord);
 
+// If this condition is verified, the entered word is a palindrome word, else not.
+
+if (userWord === reverseWord) {
+    alert('Your word is a palindrome word.');
+} else {
+    alert('Your word is not a palindrome word');
+}
+
 // Create a function in order to know if the entered word is palindrome
 
 function reverseCharacters(word) {
@@ -20,13 +28,7 @@ function reverseCharacters(word) {
     return reverse;
 }
 
-// If this condition is verified, the entered word is a palindrome word, else not.
 
-if (userWord === reverseWord) {
-    alert('Your word is a palindrome word.');
-} else {
-    alert('Your word is not a palindrome word');
-}
 
 
 
