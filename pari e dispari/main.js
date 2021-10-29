@@ -7,6 +7,8 @@
 
 // Ref
 let cpuRandNumb = randomNumber(1, 5);
+console.log(cpuRandNumb);
+let oddOrEvenSumWinner = oddOrEvenSum('')
 
 // Ref
 let userOddEven = prompt('Choose odd or even');
@@ -32,17 +34,23 @@ let userCpuSum = userNumber + cpuRandNumb;
 // Declare if the sum of the two numbers (user + cpu) is "odd" or "even"
 function oddOrEvenSum(num) {
     // Flag
-    let oddOrEven = false;
+    let oddOrEven = '';
     // Validation
-    if (userCpuSum % 2 == 0) {
+    if (num % 2 == 0) {
         alert('The sum of user number and cpu number is odd.')
-        oddOrEven = true;
+        oddOrEven = 'odd';
+    } else {
+        oddOrEven = 'even';
     }
     return oddOrEven;
 }
 
 // Declare the winner between user number and cpu number
-
+if (oddOrEvenSum(userCpuSum) === userOddEven) {
+    alert('User wins :)')
+} else {
+    alert('CPU wins. Again. :(')
+}
 
 // Generate a random number from 1 to 5 for CPU:
 function randomNumber(min, max) {
