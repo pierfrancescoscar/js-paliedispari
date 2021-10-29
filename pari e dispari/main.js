@@ -30,11 +30,19 @@ while (userNumber < 1 || userNumber > 5 || isNaN(userNumber)) {
 let userCpuSum = userNumber + cpuRandNumb;
 
 // Declare if the sum of the two numbers (user + cpu) is "odd" or "even"
-if (userCpuSum % 2 == 0) {
-    alert('The sum of user number and cpu number is odd.')
-} else {
-    alert('The sum of user number and cpu number is even.')
+function oddOrEvenSum(num) {
+    // Flag
+    let oddOrEven = false;
+    // Validation
+    if (userCpuSum % 2 == 0) {
+        alert('The sum of user number and cpu number is odd.')
+        oddOrEven = true;
+    }
+    return oddOrEven;
 }
+
+// Declare the winner between user number and cpu number
+
 
 // Generate a random number from 1 to 5 for CPU:
 function randomNumber(min, max) {
