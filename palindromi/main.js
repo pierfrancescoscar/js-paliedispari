@@ -17,8 +17,16 @@ function reverseCharacters(word) {
         console.log(word[i]);
         reverse += word[i];
     }
-
     return reverse;
-
 }
+
+// If this condition is verified, the entered word is a palindrome word, else not.
+
+if (userWord === reverseWord) {
+    alert('Your word is a palindrome word.');
+} else {
+    alert('Your word is not a palindrome word');
+}
+
+
 
