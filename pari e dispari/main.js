@@ -29,10 +29,19 @@ while (userNumber < 1 || userNumber > 5 || isNaN(userNumber)) {
 // Sum between user entered number and cpu generated random number
 let userCpuSum = userNumber + cpuRandNumb;
 
+// Declare if the sum of the two numbers (user + cpu) is "odd" or "even"
+if (userCpuSum % 2 == 0) {
+    alert('The sum of user number and cpu number is odd.')
+} else {
+    alert('The sum of user number and cpu number is even.')
+}
+
 // Generate a random number from 1 to 5 for CPU:
 function randomNumber(min, max) {
     return Math.floor(Math.random() * (max - min + 1) ) + min;
 }
+
+
 
 
 
