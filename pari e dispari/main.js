@@ -5,3 +5,22 @@
 // Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
 // Dichiariamo chi ha vinto.
 
+// Ref
+const userOddEven = prompt('Scegli tra pari o dispari');
+console.log(userOddEven);
+const userNumber = parseInt(prompt('Inserisci un numero da 1 a 5'));
+console.log(userNumber);
+let cpuRandNumb = randomNumber(1, 5);
+
+
+// Generate a random number from 1 to 5 for CPU:
+
+function randomNumber(min, max) {
+    let cpuRandNumb = Math.floor(Math.random() * (max - min + 1) ) + min;
+    console.log(cpuRandNumb);
+  }
+
+  
+
+
+
