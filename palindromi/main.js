@@ -5,9 +5,20 @@
 // Refs
 
 const userWord = prompt('Please, enter a word.');
-// console.log(userWord); //
+const reverseWord = reverseCharacters(userWord);
 
 // Create a function in order to know if the entered word is palindrome
 
+function reverseCharacters(word) {
+    // Reset ref
+    let reverse = '';
+    // Cycle
+    for (let i = word.length - 1; i >= 0; i--) {
+        console.log(word[i]);
+        reverse += word[i];
+    }
 
+    return reverse;
+
+}
 
